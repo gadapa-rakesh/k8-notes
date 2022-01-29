@@ -25,3 +25,8 @@ Notes on K8 commands
  2. **Rolling update:** Take down the older and bring up the newer version. default strategy if one not given while creating deployments
 
 > **Note:** a new replica set is created when rolling update strategy is followed
+
+## Jobs & CronJobs - 
+> `restartPolicy: Never` under pod definition file will make sure K8 doesn't attempt to restart the pod
+> by default value is `restartPolicy: Always`
+
